@@ -211,7 +211,7 @@ describe('Client', () => {
           scope: 'openid profile email',
         }),
       ).to.eql(
-        'https://op.example.com/auth?client_id=identifier&scope=openid%20profile%20email&response_type=code&state=state',
+        'https://op.example.com/auth?client_id=identifier&scope=openid+profile+email&response_type=code&state=state',
       );
     });
   });
