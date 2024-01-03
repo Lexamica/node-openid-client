@@ -151,7 +151,7 @@ export interface CallbackParamsType {
   expires_in?: string;
   id_token?: string;
   state?: string;
-  token_type?: string;
+  token_type?: 'bearer' | 'dpop' | Lowercase<string>;
   session_state?: string;
   response?: string;
 
@@ -290,7 +290,7 @@ export interface IntrospectionResponse {
   scope: string;
   sub?: string;
   nbf?: number;
-  token_type?: string;
+  token_type?: 'bearer' | 'dpop' | Lowercase<string>;
   cnf?: {
     'x5t#S256'?: string;
 
@@ -447,7 +447,7 @@ export class Issuer<TClient extends BaseClient = BaseClient> {
 
 export interface TokenSetParameters {
   access_token?: string;
-  token_type?: string;
+  token_type?: 'bearer' | 'dpop' | Lowercase<string>;
   id_token?: string;
   refresh_token?: string;
   scope?: string;
@@ -478,7 +478,7 @@ export interface IdTokenClaims extends UserinfoResponse {
 
 export class TokenSet implements TokenSetParameters {
   access_token?: string;
-  token_type?: string;
+  token_type?: 'bearer' | 'dpop' | Lowercase<string>;
   id_token?: string;
   refresh_token?: string;
   expires_in?: number;
