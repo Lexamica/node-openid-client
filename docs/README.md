@@ -112,9 +112,6 @@ adds necessary [FAPI 2.0 Security Profile - Implementer's Draft 02][] behaviours
 
 The behaviours are:
 - additional client constuctor metadata validations and changed defaults
-- `s_hash` presence and value checks in authorization endpoint response ID Tokens
-- authorization endpoint response ID Tokens `iat` must not be too far in the past (fixed to be
-  1 hour)
 - Request Objects include `nbf` (with the same value as `iat`)
 
 ---
