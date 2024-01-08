@@ -1,5 +1,5 @@
 {
-  "name": "openid-client",
+  "name": "@lexamica-modules/openid-client",
   "version": "4.9.2",
   "description": "OpenID Connect Relying Party (RP, Client) implementation for Node.js runtime, supports passportjs",
   "keywords": [
@@ -22,11 +22,8 @@
     "relying party",
     "strategy"
   ],
-  "homepage": "https://github.com/panva/node-openid-client",
-  "repository": "panva/node-openid-client",
-  "funding": {
-    "url": "https://github.com/sponsors/panva"
-  },
+  "homepage": "https://github.com/lexamica/node-openid-client",
+  "repository": "lexamica/node-openid-client",
   "license": "MIT",
   "author": "Filip Skokan <panva.ip@gmail.com>",
   "exports": {
